@@ -57,6 +57,8 @@ The application provides a side-by-side editor experience so developers can revi
 ## ▶️ Demo
 
 A full walkthrough demonstrating legacy code input, AI-powered migration, and output review is available via the demo video link provided in the submission.
+<img width="1919" height="838" alt="image" src="https://github.com/user-attachments/assets/5063c465-ca27-49dd-92d1-b48ddda068d3" />
+
 
 ---
 
