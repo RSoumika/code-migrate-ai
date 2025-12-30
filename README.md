@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# AI-Assisted Code Migration Tool
 
-## Project info
+An AI-assisted code migration tool that helps developers modernize legacy JavaScript codebases by converting them into modern ES6 modules or TypeScript. The tool focuses on improving developer productivity by combining AI-driven code understanding with a clean, interactive editing experience.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Project Overview
 
-There are several ways of editing your application.
+Modernizing older JavaScript code often involves manual refactoring, adding typings, and restructuring imports. This project simplifies that workflow by allowing users to paste legacy JavaScript code and automatically generate modernized output using an LLM.
 
-**Use Lovable**
+The application provides a side-by-side editor experience so developers can review, edit, and validate the migrated code before exporting it.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- Paste legacy JavaScript code using a Monaco-based editor  
+- Convert code to **ES6+ JavaScript** or **TypeScript**
+- AI-generated improvements including:
+  - Modern imports
+  - Cleaner structure
+  - TypeScript interfaces and typed imports (when applicable)
+- Side-by-side comparison of original and migrated code
+- Editable output before export
+- Migration session persistence via a backend service
+- Modular architecture with a database-agnostic persistence layer
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠 Tech Stack
 
-Follow these steps:
+**Frontend**
+- React.js
+- TypeScript
+- Monaco Editor
+- Tailwind CSS
+- shadcn-ui
+
+**Backend**
+- Node.js
+- Express.js
+- AI API (LLM-based code transformation)
+
+**Persistence**
+- Managed backend service (designed to be easily replaceable with MongoDB Atlas)
+
+---
+
+## 🧠 Tech Notes
+
+- TypeScript is used to improve safety and clarity in transformed outputs.
+- Some TypeScript warnings may appear depending on the consuming project’s configuration (such as `tsconfig.json` and installed typings), which reflects real-world migration workflows.
+- The persistence layer is modular and can be swapped with MongoDB Atlas without affecting the migration or UI logic.
+
+---
+
+## ▶️ Demo
+
+A full walkthrough demonstrating legacy code input, AI-powered migration, and output review is available via the demo video link provided in the submission.
+
+---
+
+## 🧩 Getting Started (Local Setup)
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone <YOUR_GITHUB_REPO_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd ai-code-migration-tool
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
